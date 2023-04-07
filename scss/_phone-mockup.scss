@@ -1,0 +1,47 @@
+.phone-top {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/phone-top.svg);
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.phone-wrapper {
+  width: 390px;
+  height: 818px;
+  position: relative;
+  overflow: visible;
+}
+
+.phone-bottom {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/phone-bottom.svg);
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.phone-video {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: .5%;
+  width: 100%;
+  height: 97%;
+  border-radius: 8%;
+  overflow: hidden;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.double-phone {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}

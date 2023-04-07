@@ -1,20 +1,27 @@
+@import "content";
+@import "typography";
+@import "utility";
+@import "phone-mockup";
+
+
 $primary-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $secondary-font: 'Georgia', serif;
-$font-size-base: 16px;
+$font-size-base: 100px;
 $line-height-base: 1.5;
 
 body {
   font-family: $primary-font;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
+  font-size: 0px;
+  line-height: 0px;
   color: #333;
+  margin: 0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $secondary-font;
   font-weight: bold;
   line-height: 1.2;
-  margin: 1rem 0;
+  margin: 0px;
 }
 
 h1 {
@@ -31,4 +38,20 @@ h3 {
 
 p {
   margin: 1rem 0;
+}
+
+.text-xxl {font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 59px;
+    /* identical to box height, or 109% */
+    
+    
+    color: #000000;}
+
+
+
+img {
+    max-width: 100%;
 }
