@@ -2,6 +2,7 @@
 @import "typography";
 @import "utility";
 @import "phone-mockup";
+@import "variables";
 
 
 $primary-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -15,6 +16,9 @@ body {
   line-height: 0px;
   color: #333;
   margin: 0px;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {

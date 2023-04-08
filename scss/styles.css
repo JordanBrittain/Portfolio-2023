@@ -17,6 +17,25 @@
   width: 680px;
 }
 
+@media screen and (max-width: 1024px) {
+  .content-image {
+    width: calc(100vw - 96px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-section {
+    width: calc(100vw - 48px);
+  }
+  .content-image {
+    width: calc(100vw - 48px);
+  }
+}
+.case-study {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .text-body {
   font-family: Rubik;
   font-size: 18px;
@@ -100,7 +119,7 @@
 
 .phone-wrapper {
   width: 390px;
-  height: 818px;
+  height: 817.99965px;
   position: relative;
   overflow: visible;
 }
@@ -135,12 +154,26 @@
   gap: 40px;
 }
 
+@media screen and (max-width: 1024px) {
+  .double-phone {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .phone-wrapper {
+    width: calc(100vw - 48px);
+    height: calc((100vw - 48px) * 2.097435);
+  }
+}
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0px;
   line-height: 0px;
   color: #333;
   margin: 0px;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
