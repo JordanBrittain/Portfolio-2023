@@ -1,0 +1,94 @@
+
+@import "variables";
+
+@mixin body-font() {
+    font-family: "Rubik";
+}
+
+@mixin header-font() {
+    font-family: "Rubik";
+}
+
+@mixin text-lg-bold() {
+	@include header-font;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 30px;
+	letter-spacing: 0em;
+	text-align: left;
+	margin: 0px;
+	}
+
+@mixin text-xxl-bold() {
+	font-size: 2.25rem;
+	@include body-font;
+	font-weight: 800;
+	font-style: normal;
+	line-height: 44px;
+	text-decoration: none;
+	text-transform: none;
+    color: $slate-900;
+}
+@mixin text-xxl-regular() {
+	font-size: 2.25rem;
+	font-family: "Rubik";
+	font-weight: 400;
+	font-style: normal;
+	line-height: 44px;
+	text-decoration: none;
+	text-transform: none;
+    color: $slate-900;
+}
+
+@mixin text-xxl-light() {
+	font-size: 2.25rem;
+	font-family: "Rubik";
+	font-weight: 300;
+	font-style: normal;
+	line-height: 44px;
+	text-decoration: none;
+	text-transform: none;
+    color: $slate-900;
+}
+
+@mixin text-body() {
+	font-size: 1.125rem;
+	@include body-font;
+	font-weight: 300;
+	font-style: normal;
+	line-height: 30px;
+	text-decoration: none;
+	text-transform: none;
+    color: $slate-900;
+}
+
+@mixin text-body-small-regular() {
+	font-size: 1rem;
+	@include body-font;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 24px;
+	text-decoration: none;
+	text-transform: none;
+    color: $slate-900;
+}
+
+@mixin text-body-small-light() {
+	font-size: 1rem;
+	@include body-font;
+	font-weight: 300;
+	font-style: normal;
+	line-height: 24px;
+	text-decoration: none;
+	text-transform: none;
+}
+
+@mixin text-body-small-bold() {
+	font-size: 1rem;
+	@include body-font;
+	font-weight: 700;
+	font-style: normal;
+	line-height: 24px;
+	text-decoration: none;
+	text-transform: none;
+}

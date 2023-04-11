@@ -1,0 +1,44 @@
+@import "mixins";
+@import "variables";
+
+.quotes {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 900px;
+  height: auto;
+}
+
+.quote-card {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 28px 30px;
+  gap: 10px;
+  color: $slate-50;
+  width: 100%;
+  height: auto;
+  @include text-body-small-light;
+
+  /* Slate/800 */
+
+  background: $slate-800;
+  /* Slate/50 */
+
+  border: 2px solid $slate-50;
+  border-radius: 6px;
+  align-self: stretch;
+}
+
+.quotation {
+    background-image: url(/img/quote-icon.svg);
+    width: 24px;
+    height: 15px;
+}

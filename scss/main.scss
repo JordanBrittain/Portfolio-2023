@@ -3,6 +3,11 @@
 @import "utility";
 @import "phone-mockup";
 @import "variables";
+@import "cs-header";
+@import "mixins";
+@import "quote-card";
+@import "inline-header";
+@import "results";
 
 
 $primary-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -41,7 +46,7 @@ h3 {
 }
 
 p {
-  margin: 1rem 0;
+  margin: 0;
 }
 
 .text-xxl {font-family: 'Helvetica';

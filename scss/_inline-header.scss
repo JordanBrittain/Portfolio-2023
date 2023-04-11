@@ -1,0 +1,16 @@
+@import "variables";
+@import "mixins";
+
+.inline-header {
+  @include text-xxl-bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  width: 100vw;
+  height: auto;
+}
+
+.inline-header__text {
+    width: 680px;
+}

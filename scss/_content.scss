@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 .content {
   display: flex;
@@ -39,4 +40,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.content-section__header {
+@include text-lg-bold;
+}
+
+.content-section__body {
+  @include text-body;
 }
