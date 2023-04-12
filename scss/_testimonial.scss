@@ -1,0 +1,67 @@
+@import "variables";
+@import "mixins";
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 160px 0px 180px;
+  gap: 20px;
+  background-color: $slate-50;
+  width: 100%;
+  height: auto;
+}
+
+.testimonial__quote {
+  width: 680px;
+  height: auto;
+  @include text-body;
+  text-align: center;
+  line-height: 34px;
+  color: $slate-700;
+}
+
+.testimonial__author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+}
+
+.testimonial__author-pic {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 40px;
+  margin-right: 4px;
+}
+
+.testimonial__author-name {
+  @include text-body-small-regular;
+  color: $slate-900;
+}
+.testimonial__author-dash {
+  @include text-body-small-light;
+  color: $slate-900;
+}
+
+.testimonial__author-title {
+  @include text-body-small-light;
+  color: $slate-600;
+}
+
+@media screen and (max-width: $laptop) {
+  .testimonial__quote {
+    width: calc(100vw - $global-margin-tablet);
+  }
+  .testimonial {
+    padding: 70px 0px 80px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .testimonial__quote {
+    width: calc(100vw - $global-margin-mobile);
+  }
+}

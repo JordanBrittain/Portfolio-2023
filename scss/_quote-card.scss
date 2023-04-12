@@ -10,7 +10,7 @@
   padding: 0px;
   gap: 16px;
 
-  width: 900px;
+  max-width: 900px;
   height: auto;
 }
 
@@ -25,6 +25,7 @@
   color: $slate-50;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   @include text-body-small-light;
 
   /* Slate/800 */
@@ -32,13 +33,21 @@
   background: $slate-800;
   /* Slate/50 */
 
-  border: 2px solid $slate-50;
   border-radius: 6px;
   align-self: stretch;
 }
 
 .quotation {
-    background-image: url(/img/quote-icon.svg);
-    width: 24px;
-    height: 15px;
+  background-image: url(/img/quote-icon.svg);
+  width: 24px;
+  height: 15px;
+}
+
+@media screen and (max-width: $tablet) {
+  .quotes {
+    flex-direction: column;
+
+    gap: 16px;
+    width: calc(100vw - $global-margin-mobile);
+  }
 }

@@ -1,2 +1,112 @@
 @import "variables";
 @import "mixins";
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0px 70px;
+  gap: 68px;
+  width: 100%;
+  height: auto;
+}
+
+.results__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  width: 680px;
+}
+
+.results__stats {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 680px;
+  height: auto;
+}
+
+.results__stat-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+
+  width: 226.67px;
+  height: auto;
+}
+
+.results__stat-cell-figure {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 2px;
+}
+
+.results__stat-cell-figure-plus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4px 0px 0px 3px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  align-self: stretch;
+  color: $slate-900;
+}
+
+.results__stat-cell-figure-value {
+  @include text-xxxl-xbold;
+}
+
+.results__stat-cell-figure-percent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px 0px 0px 3px;
+  gap: 10px;
+  align-self: stretch;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+
+  /* Slate/900 */
+
+  color: $slate-900;
+}
+.results__stat-cell-metric {
+  @include text-body-small-regular;
+}
+
+@media screen and (max-width: $laptop) {
+    
+    .results__text {
+      width: calc(100vw - $global-margin-tablet);
+    }
+  
+  }
+
+@media screen and (max-width: $tablet) {
+  .results__stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: calc(100vw - $global-margin-mobile);
+  }
+  .results__text {
+    width: calc(100vw - $global-margin-mobile);
+  }
+
+}
+

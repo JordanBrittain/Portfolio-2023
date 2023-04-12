@@ -25,8 +25,8 @@
 
 
 .phone-wrapper {
-  width: 390px;
-  height: calc(390px * $aspect-ratio);
+  width: 320px;
+  height: calc(320px * $aspect-ratio);
   position: relative;
   overflow: visible;
 }
@@ -44,12 +44,12 @@
 
 .phone-video {
   position: absolute;
-  left: 0;
+  left: .5%;
   right: 0;
   top: 0.5%;
-  width: 100%;
+  width: 98%;
   height: 97%;
-  border-radius: 8%;
+  border-radius: 5%;
   overflow: hidden;
   background-size: 100%;
   background-repeat: no-repeat;

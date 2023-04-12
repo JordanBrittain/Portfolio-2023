@@ -7,7 +7,7 @@
   align-items: center;
   padding: 60px 0px 70px;
   gap: 78px;
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
@@ -17,33 +17,45 @@
   align-items: flex-start;
   padding: 0px;
   gap: 4px;
-  width: 680px;
+  max-width: 680px;
 }
+
+
+
 
 @media screen and (max-width: $laptop) {
   .content-image {
-    width: calc(100vw - 96px);
+    max-width: calc(100vw - $global-margin-tablet) !important;
   }
 }
 
 @media screen and (max-width: $tablet) {
   .content-section {
-    width: calc(100vw - 48px);
+    max-width: calc(100vw - $global-margin-mobile);
   }
 
   .content-image {
-    width: calc(100vw - 48px);
+    max-width: calc(100vw - $global-margin-mobile) !important;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px 50px;
+    gap: 38px;
+    width: 100%;
+    height: auto;
   }
 }
 
 .case-study {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .content-section__header {
-@include text-lg-bold;
+  @include text-lg-bold;
 }
 
 .content-section__body {

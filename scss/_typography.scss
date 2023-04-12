@@ -1,5 +1,8 @@
 @import "mixins";
 
+.text-xxxl-xbold {
+    @include text-xxxl-xbold;
+}
 
 .text-lg-bold {
     @include text-lg-bold;

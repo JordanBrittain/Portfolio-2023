@@ -8,6 +8,7 @@
 @import "quote-card";
 @import "inline-header";
 @import "results";
+@import "testimonial";
 
 
 $primary-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -22,7 +23,7 @@ body {
   color: #333;
   margin: 0px;
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
 }
 
