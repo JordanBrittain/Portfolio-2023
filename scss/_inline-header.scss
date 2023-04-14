@@ -15,13 +15,7 @@
     width: 680px;
 }
 
-@media screen and (max-width: $laptop) {
-  .inline-header__text {
 
-    width: calc(100vw - $global-margin-tablet)
-
-  }
-}
 
 @media screen and (max-width: $tablet) {
   .inline-header__text {

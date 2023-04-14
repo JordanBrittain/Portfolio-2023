@@ -1,11 +1,29 @@
 @import "variables";
 
 @mixin body-font() {
-  font-family: "Inter";
+  font-family: "Anuphan";
 }
 
 @mixin header-font() {
-  font-family: "Rubik";
+  font-family: "Anuphan";
+}
+
+@mixin hero-text() {
+  @include header-font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 79px;
+  color: $slate-900;
+}
+
+@mixin hero-text-tablet() {
+  @include header-font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 56px;
+  color: $slate-900;
 }
 
 @mixin text-xxxl-xbold() {
@@ -21,6 +39,28 @@
   @include header-font;
   font-size: 20px;
   font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0px;
+  color: $slate-900;
+}
+
+@mixin text-xl-regular() {
+  @include header-font;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0px;
+  color: $slate-900;
+}
+
+@mixin text-xl-bold() {
+  @include header-font;
+  font-size: 22px;
+  font-weight: 700;
   line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
@@ -101,4 +141,26 @@
   line-height: 24px;
   text-decoration: none;
   text-transform: none;
+}
+
+@mixin text-body-small-semibold() {
+  font-size: 1rem;
+  @include body-font;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+  color: $slate-900;
+}
+
+@mixin text-body-small-medium() {
+  font-size: 1rem;
+  @include body-font;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+  color: $slate-900;
 }

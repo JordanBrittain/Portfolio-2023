@@ -9,6 +9,8 @@
 @import "inline-header";
 @import "results";
 @import "testimonial";
+@import "navigation";
+@import "homepage";
 
 
 $primary-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -64,4 +66,20 @@ p {
 
 img {
     max-width: 100%;
+}
+
+a {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }

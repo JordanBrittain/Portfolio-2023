@@ -2,6 +2,17 @@
 @import "variables";
 
 /* Max width of 320 pixels */
+
+.w-100p {
+  width: 100%;
+}
+
+.fg-4 {
+  display: flex;
+  gap: 4px;
+}
+
+
 .max-w-xxs {
     max-width: 320px;
   }

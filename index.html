@@ -1,26 +1,88 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>My Portfolio Website 202 test</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/scss/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/scss/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <header>
-      <h1 class="text-xxl">My Website</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="/schedule.html">Schedule & Sccores Case Study</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h2>Welcome to my website!</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac metus id nisi aliquam mattis. Sed blandit mi eget justo euismod dignissim. Integer at turpis quis augue eleifend gravida ut vitae augue. Aliquam et diam eget ipsum pulvinar faucibus. Nam nec velit ut lectus volutpat finibus ut ac nunc. Proin sit amet tellus nec mauris fermentum convallis. Curabitur vel tellus at mauris volutpat sagittis vel vel justo. Sed ac purus in diam tristique ultrices.</p>
-    </main>
+  <body class="hp">
+    <!-- Nav -->
+    <div class="nav">
+      <div class="nav-content">
+        <div class="nav-title">Jordan Brittain</div>
+        <div class="nav-title-mobile">JB</div>
+
+        <div class="nav-buttons">
+          <a href="/index.html"><div class="nav-item">Work</div></a>
+          <a href="/index.html"><div class="nav-item">About</div></a>
+          <a
+            href="mailto:jordan.brittain@gmail.com?subject=Howdy%20%F0%9F%91%8B&body=Hey%20there,"
+          >
+            <div class="connect-wrapper">
+              <div class="nav-item--connect">Email</div>
+              <div class="plane-wrapper"><div class="plane"></div></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hp-hero">
+      <div class="hp-hero__text-container">
+        <div class="hp-hero__text">
+          <span class="hp-hero__text-bold">Hey,</span> I’m Jordan, a
+          multi-disciplinary designer with a focus in
+          <span class="hp-hero__text-highlight">product design.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case Studies -->
+    <div class="hp-cs-row">
+      <a class="w-100p" href="/ms-live.html">
+        <div class="hp-cs">
+          <div class="hp-cs__image">
+            <img src="/img/ms-live-cs.png" />
+          </div>
+          <div class="hp-cs__title">
+            MileSplit Live<span class="hp-cs__title-regular"> - Redesign</span>
+          </div>
+          <div class="hp-cs__desc">
+            Creating a richer experience for track & field fans.
+          </div>
+          <div class="hp-cs__button">
+            <img class="hp-cs__button-arrow" src="/img/arrow.svg" />
+          </div>
+        </div>
+      </a>
+
+      <a class="w-100p" href="/flosports-ss.html">
+        <div class="hp-cs">
+          <div class="hp-cs__image">
+            <img src="/img/schedule-scores-cs.png" />
+          </div>
+          <div class="hp-cs__title">
+            FloSports<span class="hp-cs__title-regular">
+              - Schedules & Scores</span
+            >
+          </div>
+          <div class="hp-cs__desc">
+            Revamping a schedule feature to support an evolving business.
+          </div>
+          <div class="hp-cs__button">
+            <img class="hp-cs__button-arrow" src="/img/arrow.svg" />
+          </div>
+        </div>
+      </a>
+    </div>
     <footer>
       <p>&copy; 2023 My Website. All rights reserved.</p>
     </footer>
