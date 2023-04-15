@@ -1,11 +1,17 @@
 @import "variables";
 @import "mixins";
 
+
+
+
+
+
+
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0px 70px;
+  padding: 70px 0px 80px;
   gap: 78px;
   width: 100%;
   height: auto;
@@ -60,4 +66,44 @@
 
 .content-section__body {
   @include text-body;
+}
+
+
+//Coloring - Dark
+
+.dark-content {
+  color: $slate-50 !important;
+  background-color: $slate-800;
+}
+
+.dark-content .content-section__body {
+  color: $slate-50 !important;
+  font-weight: 300;
+}
+
+.dark-content .content-section__header {
+  color: $slate-50 !important;
+}
+
+//Coloring - Grey
+
+.grey-content {
+  color: $slate-900 !important;
+  background-color: #f2f4f7;
+}
+
+//Coloring - Dark Zinc
+
+.dark-content-z {
+  color: $slate-50 !important;
+  background-color: #121212;
+}
+
+.dark-content-z .content-section__body {
+  color: $slate-50 !important;
+  font-weight: 300;
+}
+
+.dark-content-z .content-section__header {
+  color: $slate-50 !important;
 }

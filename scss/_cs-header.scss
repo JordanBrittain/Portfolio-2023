@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   padding: 148px 0px 118px;
-  gap: 40px;
+  gap: 12px;
   width: 100%;
   height: auto;
 }
@@ -18,7 +18,6 @@
   gap: 14px;
   width: 680px;
   height: auto;
-  border-bottom: 1px solid $slate-200;
 }
 
 .cs-header__meta {
@@ -58,6 +57,18 @@
 }
 
 
+.cs-hero__text {
+  @include hero-text;
+  margin-bottom: 8px;
+  line-height: 116%;
+}
+
+.cs-hero__text-bold {
+  font-weight: 700;
+}
+
+
+
 @media screen and (max-width: $desktop) {
   .splash {
     height: auto;
@@ -67,6 +78,10 @@
 @media screen and (max-width: $laptop) {
   .cs-header__summary {
     width: calc(100vw - $global-margin-tablet);
+  }
+
+  .cs-hero__text {
+    @include hero-text-tablet;
   }
 
   .cs-header__meta {
@@ -98,6 +113,7 @@
 @media screen and (max-width: $tablet) {
   .cs-header__summary {
     width: calc(100vw - $global-margin-mobile);
+    border-bottom: 1px solid $slate-200;
   }
   .cs-header__meta {
     flex-direction: column;

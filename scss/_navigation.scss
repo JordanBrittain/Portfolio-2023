@@ -1,17 +1,6 @@
 @import "variables";
 @import "mixins";
 
-
-
-.mobile-nav {
-height: 0vh;
-width: 100vw;
-background-color: #fff;
-position: absolute;
-}
-
-
-
 .nav {
   width: 100vw;
   padding: 16px 0px 16px;
@@ -35,9 +24,9 @@ position: absolute;
 }
 
 .nav-title-mobile {
-    @include text-body-small-medium;
-    visibility: hidden;
-  }
+  @include text-body-small-medium;
+  visibility: hidden;
+}
 
 .nav-buttons {
   display: flex;
@@ -175,5 +164,9 @@ position: absolute;
 
   .nav-buttons {
     gap: 2px;
+  }
+
+  .nav {
+    padding: 8px 0px 8px;
   }
 }

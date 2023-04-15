@@ -1,0 +1,77 @@
+@import "variables";
+@import "mixins";
+
+.about-hero {
+  display: flex;
+  width: calc(100vw - calc($hp-margin * 2));
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20vh;
+  margin-bottom: 40vh;
+  height: auto;
+  gap: 40px;
+}
+
+.about-hero__text-container {
+  width: 60%;
+  margin-right: 40px;
+}
+
+.about-hero__text {
+  @include hero-text;
+  margin-bottom: 8px;
+}
+
+.about-hero__text-bold {
+  font-weight: 700;
+}
+.about-hero__body {
+  @include text-body;
+  margin-top: 12px;
+}
+
+.about-hero-comp {
+    margin-top: 94px;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about-comp-header {
+    @include text-body-small-bold;
+    margin-top: 12px;
+}
+
+.comp-item {
+    @include text-body-small-regular;
+    width: auto;
+    color: $interaction-color-base;
+}
+
+@media (max-width: $tablet) {
+  .about-hero__text-container {
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .about-hero {
+    display: flex;
+    width: calc(100vw - calc($hp-margin-tablet * 2));
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    height: auto;
+    gap: 20px;
+  }
+
+  .about-hero__text {
+    @include hero-text-tablet;
+  }
+
+  .about-hero-comp {
+    margin-top: 40px;
+  
+}
+
+}
