@@ -29,6 +29,7 @@
   height: calc(320px * $aspect-ratio);
   position: relative;
   overflow: visible;
+  display: flex;
 }
 
 .phone-bottom {
@@ -40,6 +41,7 @@
   right: 0;
   background-size: 100%;
   background-repeat: no-repeat;
+  display: flex;
 }
 
 .phone-video {
@@ -53,6 +55,7 @@
   overflow: hidden;
   background-size: 100%;
   background-repeat: no-repeat;
+  display: flex;
 }
 
 .double-phone {
