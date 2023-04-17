@@ -11,9 +11,9 @@
 @mixin hero-text() {
   @include header-font;
   font-style: normal;
-  font-weight: 300;
-  font-size: 52px;
-  line-height: 79px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 78px;
   color: $slate-900;
 }
 
@@ -21,15 +21,15 @@
   @include header-font;
   font-style: normal;
   font-weight: 700;
-  font-size: 52px;
-  line-height: 79px;
+  font-size: 48px;
+  line-height: 78px;
   color: $slate-900;
 }
 
 @mixin hero-text-tablet() {
   @include header-font;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 38px;
   line-height: 56px;
   color: $slate-900;

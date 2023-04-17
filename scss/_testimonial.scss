@@ -7,7 +7,7 @@
   align-items: center;
   padding: 140px 0px 140px;
   gap: 34px;
-  background-color: $slate-50;
+  // background-color: $slate-50;
   width: 100%;
   height: auto;
 }
@@ -18,7 +18,7 @@
   @include text-body;
   text-align: center;
   line-height: 34px;
-  color: $slate-700;
+  color: $slate-900;
 }
 
 .testimonial__author {
@@ -47,7 +47,7 @@
 }
 
 .testimonial__author-title {
-  @include text-body-small-light;
+  @include text-body-small-regular;
   color: $slate-600;
 }
 

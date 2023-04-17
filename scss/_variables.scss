@@ -22,12 +22,14 @@ $slate-600: #475569;
 $slate-700: #334155;
 $slate-800: #1e293b;
 $slate-900: #0f172a;
-$text-accent: #cffff9;
+
 
 $interaction-color-base: #0a0aff;
-$adjusted-interaction: adjust-hue($interaction-color-base, -30deg);
+$adjusted-interaction: adjust-hue($interaction-color-base, -40deg);
+$interaction-color-lightish: mix($adjusted-interaction, #fff, 25%);
 $interaction-color-light: mix($adjusted-interaction, #fff, 15%);
 $interaction-color-xlight: mix($adjusted-interaction, #fff, 8%);
+$text-accent: $interaction-color-lightish;
 
 $gray-50: #fafafa;
 $gray-100: #f4f4f5;
@@ -48,3 +50,5 @@ $global-margin-mobile: 48px;
 
 $hp-margin: 120px;
 $hp-margin-tablet: 24px;
+
+$chill-gray: #f4f6fa;
