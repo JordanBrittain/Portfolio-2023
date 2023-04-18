@@ -573,12 +573,12 @@
 
 .phone-video {
   position: absolute;
-  left: 1.5%;
+  left: 1%;
   right: 0;
   top: 0.5%;
-  width: 97%;
+  width: 98%;
   height: 97%;
-  border-radius: 5%;
+  border-radius: 4.5%;
   overflow: hidden;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -1275,6 +1275,7 @@
   aspect-ratio: 16/9;
   border-radius: 2%;
   overflow: hidden;
+  border: 1px solid #e2e8f0;
 }
 
 .hp-cs__image img {
@@ -1406,7 +1407,7 @@
 
 .footer {
   width: 100vw;
-  padding: 16px 0px 24px;
+  padding: 16px 0px 32px;
   background-color: #fff;
   display: flex;
   align-items: center;
