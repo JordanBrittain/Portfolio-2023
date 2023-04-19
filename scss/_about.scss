@@ -75,3 +75,12 @@
 }
 
 }
+
+@media (min-width: $large-desktop) {
+  .about-hero {
+    height: calc(90vh - 192px);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10vh;
+  }
+}
