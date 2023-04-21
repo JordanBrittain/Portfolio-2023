@@ -89,7 +89,15 @@
 
 .grey-content {
   color: $slate-900 !important;
-  background-color: $chill-gray;
+  background: linear-gradient(
+    -45deg,
+
+    $slate-100, $chill-gray
+  );
+  background-size: 100% 100%;
+  height: 100%;
+
+  //background-color: $chill-gray;
 }
 
 //Coloring - Dark Zinc

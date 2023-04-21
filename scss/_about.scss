@@ -6,10 +6,25 @@
   width: calc(100vw - calc($hp-margin * 2));
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 20vh;
-  margin-bottom: 40vh;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
   height: auto;
   gap: 40px;
+}
+
+.inline-link {
+  display: inline;
+  color: $interaction-color-base !important;
+}
+
+.about-quote-container {
+  width: calc(100vw - calc($hp-margin * 2));
+  display: flex;
+  flex-direction: column;
+  gap: 108px;
+  margin-bottom: 10vh;
+  padding-top: 10vh;
+  border-top: 1px solid $slate-200;
 }
 
 .about-hero__text-container {
@@ -31,22 +46,21 @@
 }
 
 .about-hero-comp {
-    margin-top: 94px;
+  margin-top: 16px;
   min-width: 240px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .about-comp-header {
-    @include text-body-small-bold;
-    margin-top: 12px;
+  @include text-body-small-bold;
+  margin-top: 32px;
 }
 
 .comp-item {
-    @include text-body-small-regular;
-    width: auto;
-    color: $interaction-color-base;
+  @include text-body-small-regular;
+  width: auto;
 }
 
 @media (max-width: $tablet) {
@@ -71,16 +85,18 @@
 
   .about-hero-comp {
     margin-top: 40px;
-  
-}
+  }
 
-}
-
-@media (min-width: $large-desktop) {
-  .about-hero {
-    height: calc(90vh - 192px);
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 10vh;
+  .about-quote-container {
+    width: calc(100vw - calc($hp-margin-tablet * 2));
   }
 }
+
+// @media (min-width: $large-desktop) {
+//   .about-hero {
+//     height: calc(90vh - 192px);
+//     margin-top: 0px;
+//     margin-bottom: 0px;
+//     padding-top: 10vh;
+//   }
+// }

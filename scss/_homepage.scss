@@ -7,17 +7,20 @@
   align-items: flex-start;
   align-items: center;
   overflow-x: hidden;
-    // background: linear-gradient(
-    //   -45deg,
+}
 
-    //   #fff,
-    //   $slate-200,
-    //  #fff,
-    //   #fff
-    // );
-    // background-size: 400% 400%;
-    // animation: gradient 7s ease infinite;
-    // height: 100%;
+.trippy-bg {
+      background: linear-gradient(
+      -45deg,
+
+      #fff,
+      $interaction-color-xlight,
+     #fff,
+      #fff
+    );
+    background-size: 200% 200%;
+    animation: gradient 7s ease infinite;
+    height: 100%;
 }
 
 @keyframes gradient {
@@ -40,8 +43,8 @@
 
 .hp-hero__text-container {
   margin-left: $hp-margin;
-  margin-top: 20vh;
-  margin-bottom: 20vh;
+  margin-top: 15vh;
+  margin-bottom: 4vh;
   width: 70%;
   overflow: hidden;
 }
@@ -60,10 +63,7 @@
 
 .hp-header {
     width: calc(100vw - calc($hp-margin * 2));
-    @include text-body-small-regular;
-    padding-bottom: 14px;
-    margin-bottom: 52px;
-    border-bottom: 1px solid $slate-200;
+    margin-bottom: 15vh;
 }
 
 .hp-cs-row {
@@ -150,7 +150,7 @@
   .hp-hero__text-container {
     margin-left: $hp-margin-tablet;
     margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-bottom: 4vh;
     width: calc(100vw - calc($hp-margin-tablet * 2));
     overflow: hidden;
   }
@@ -181,7 +181,7 @@
 
   .hp-header {
     width: calc(100vw - calc($hp-margin-tablet * 2));
-    margin-bottom: 40px;
+    margin-bottom: 14vh;
   }
 
 }

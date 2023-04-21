@@ -7,10 +7,32 @@
   align-items: center;
   padding: 140px 0px 140px;
   gap: 34px;
-  background-color: $chill-gray;
   width: 100%;
   height: auto;
 }
+
+
+//for about page
+
+.testimonial-alt {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 28px;
+  width: 100%;
+  height: auto;
+}
+
+
+.testimonial__quote-alt {
+  width: 60%;
+  height: auto;
+  @include text-body;
+  line-height: 34px;
+  color: $slate-900;
+}
+
+
 
 .testimonial__quote {
   width: 680px;
@@ -26,30 +48,44 @@
   flex-direction: row;
   align-items: center;
   padding: 0px;
-  gap: 4px;
+  gap: 12px;
 }
 
 .testimonial__author-pic {
-  width: 24px;
-  height: 24px;
+  width: 46px;
+  height: 46px;
   overflow: hidden;
   border-radius: 40px;
   margin-right: 4px;
+}
+
+.testimonial__author-wrapper {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .testimonial__author-name {
   @include text-body-small-regular;
   color: $slate-900;
 }
-.testimonial__author-dash {
-  @include text-body-small-light;
-  color: $slate-900;
+
+.testimonial__author-credentials-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
 }
 
 .testimonial__author-title {
   @include text-body-small-regular;
   color: $slate-600;
 }
+
+.testimonial__author-company {
+  @include text-body-small-regular;
+  color: $slate-600;
+}
+
 
 @media screen and (max-width: $laptop) {
   .testimonial__quote {
@@ -63,5 +99,9 @@
 @media screen and (max-width: $tablet) {
   .testimonial__quote {
     width: calc(100vw - $global-margin-mobile);
+  }
+
+  .testimonial__quote-alt {
+    width: 100%;
   }
 }
