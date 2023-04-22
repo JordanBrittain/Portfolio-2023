@@ -55,8 +55,8 @@
     <div class="hp-cs-row">
       <a class="w-100p" href="/ms-live.html">
         <div class="hp-cs">
-          <div class="hp-cs__image">
-            <img src="/img/ms-live-cs.png" />
+          <div class="hp-cs__video">
+            <video src="/img/performance-comp.mp4" muted loop playsinline></video>
           </div>
           <div class="hp-cs__title">
             MileSplit Live<span class="hp-cs__title-regular"> - Redesign</span>
@@ -90,6 +90,21 @@
       </a>
     </div>
 
+
+    <script>
+      const videoElements = document.querySelectorAll('.hp-cs__video video');
+      
+      videoElements.forEach((video) => {
+        video.addEventListener('mouseover', () => {
+          video.play();
+        });
+        
+        video.addEventListener('mouseout', () => {
+          video.pause();
+        });
+      });
+    </script>
+
     <!-- Footer -->
     <footer>
       <div class="footer">
@@ -116,3 +131,4 @@
     </footer>
   </body>
 </html>
+
