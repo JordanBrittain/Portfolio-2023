@@ -107,6 +107,14 @@
   object-position: center; /* centers the image within the content box */
 }
 
+.hp-cs__video img {
+  width: 100%; /* set the width of the image to 100% of the parent div */
+  height: 100%; /* set the height of the image to 100% of the parent div */
+  object-fit: cover; /* scales the image to cover the entire content box while preserving aspect ratio */
+  object-position: center; /* centers the image within the content box */
+  visibility: hidden;
+}
+
 .hp-cs__image img {
   width: 100%; /* set the width of the image to 100% of the parent div */
   height: 100%; /* set the height of the image to 100% of the parent div */
@@ -197,6 +205,16 @@
   .hp-header {
     width: calc(100vw - calc($hp-margin-tablet * 2));
     margin-bottom: 14vh;
+  }
+
+  .hp-cs__video video {
+    visibility: hidden;
+    height: 0px;
+  }
+  
+  .hp-cs__video img {
+position: relative;
+    visibility: visible;
   }
 
 }
