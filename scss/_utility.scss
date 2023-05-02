@@ -12,6 +12,15 @@
   gap: 4px;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-26 {
+  gap: 26px;
+}
+
 
 .max-w-xxs {
     max-width: 320px;
